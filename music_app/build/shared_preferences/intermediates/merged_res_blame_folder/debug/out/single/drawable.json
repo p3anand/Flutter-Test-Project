@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\build\\shared_preferences\\intermediates\\merged_res\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Preethi_Anand\\.gradle\\caches\\transforms-3\\f1c841d045ef482fe1d715e2c37bcd22\\transformed\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\build\\shared_preferences\\intermediates\\merged_res\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Preethi_Anand\\.gradle\\caches\\transforms-3\\f1c841d045ef482fe1d715e2c37bcd22\\transformed\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\build\\shared_preferences\\intermediates\\merged_res\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Preethi_Anand\\.gradle\\caches\\transforms-3\\f1c841d045ef482fe1d715e2c37bcd22\\transformed\\core-1.6.0\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\build\\shared_preferences\\intermediates\\merged_res\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Preethi_Anand\\.gradle\\caches\\transforms-3\\f1c841d045ef482fe1d715e2c37bcd22\\transformed\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
+    }
+]

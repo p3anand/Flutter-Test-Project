@@ -1,0 +1,183 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from [:integration_test] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\integration_test\intermediates\merged_manifest\debug\AndroidManifest.xml:7:1-12:12
+MERGED from [:shared_preferences] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\60fa4d2eef29530adb2f3737bb09a32c\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.test:rules:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b01d236638318408c0f6cef07e33ad32\transformed\rules-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test.espresso:espresso-core:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\9f620459e3bc9d58babe941310dc9fbb\transformed\espresso-core-3.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:runner:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e13833c0976f2616f9053fcccb41eaf2\transformed\runner-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6321dc79945347e905b8ad0349050ee9\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\58c9efc7af9f19a662d867e9bb4fa8c1\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5758ad7f94b26528332ae2e21286e921\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\65e122713b8a98ad061be44ab9744a2b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\504632503a5a3f521a044d0377c00314\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\f1c841d045ef482fe1d715e2c37bcd22\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\04dee14d09c70903f2f9bbfd117aa5c4\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\dd9a83911a1ab7cbbf8a31cf5ece3a19\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\14fbddf6af4b6262a397d065d3c27a4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e18d8bd9f008b720890367964a22c2ec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e601848ac5b3a9b864a65f7c34a62b82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\ed820d5631f2a7ce3d8becb3bac1786e\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6a8d4b17334547b546b1aeb0b88b073c\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\93a025fdd94866da46cc362b54f2c496\transformed\espresso-idling-resource-3.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\bb89a42aeacfb36114700113e94c855a\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:2:5-36
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:3:4-43:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\f1c841d045ef482fe1d715e2c37bcd22\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\f1c841d045ef482fe1d715e2c37bcd22\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\f1c841d045ef482fe1d715e2c37bcd22\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:5:9-34
+	android:icon
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:4:9-36
+activity#com.example.music_app.MainActivity
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:7:9-36:20
+	android:exported
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:9:13-36
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:8:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:19:13-22:17
+	android:resource
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:21:15-52
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:20:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:28:13-31:17
+	android:resource
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:30:15-61
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:29:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:32:13-35:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:33:17-68
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:34:17-76
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:34:27-74
+meta-data#flutterEmbedding
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:40:9-42:33
+	android:value
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:42:13-30
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:41:13-44
+uses-sdk
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+MERGED from [:integration_test] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\integration_test\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-44
+MERGED from [:integration_test] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\integration_test\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-44
+MERGED from [:shared_preferences] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\60fa4d2eef29530adb2f3737bb09a32c\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\60fa4d2eef29530adb2f3737bb09a32c\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:rules:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b01d236638318408c0f6cef07e33ad32\transformed\rules-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:rules:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b01d236638318408c0f6cef07e33ad32\transformed\rules-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-core:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\9f620459e3bc9d58babe941310dc9fbb\transformed\espresso-core-3.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-core:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\9f620459e3bc9d58babe941310dc9fbb\transformed\espresso-core-3.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:runner:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e13833c0976f2616f9053fcccb41eaf2\transformed\runner-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:runner:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e13833c0976f2616f9053fcccb41eaf2\transformed\runner-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6321dc79945347e905b8ad0349050ee9\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6321dc79945347e905b8ad0349050ee9\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\58c9efc7af9f19a662d867e9bb4fa8c1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\58c9efc7af9f19a662d867e9bb4fa8c1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5758ad7f94b26528332ae2e21286e921\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5758ad7f94b26528332ae2e21286e921\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\65e122713b8a98ad061be44ab9744a2b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\65e122713b8a98ad061be44ab9744a2b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\504632503a5a3f521a044d0377c00314\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\504632503a5a3f521a044d0377c00314\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\f1c841d045ef482fe1d715e2c37bcd22\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\f1c841d045ef482fe1d715e2c37bcd22\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\04dee14d09c70903f2f9bbfd117aa5c4\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\04dee14d09c70903f2f9bbfd117aa5c4\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\dd9a83911a1ab7cbbf8a31cf5ece3a19\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\dd9a83911a1ab7cbbf8a31cf5ece3a19\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\14fbddf6af4b6262a397d065d3c27a4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\14fbddf6af4b6262a397d065d3c27a4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e18d8bd9f008b720890367964a22c2ec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e18d8bd9f008b720890367964a22c2ec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e601848ac5b3a9b864a65f7c34a62b82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e601848ac5b3a9b864a65f7c34a62b82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\ed820d5631f2a7ce3d8becb3bac1786e\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\ed820d5631f2a7ce3d8becb3bac1786e\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6a8d4b17334547b546b1aeb0b88b073c\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6a8d4b17334547b546b1aeb0b88b073c\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\93a025fdd94866da46cc362b54f2c496\transformed\espresso-idling-resource-3.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\93a025fdd94866da46cc362b54f2c496\transformed\espresso-idling-resource-3.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\bb89a42aeacfb36114700113e94c855a\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\bb89a42aeacfb36114700113e94c855a\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51

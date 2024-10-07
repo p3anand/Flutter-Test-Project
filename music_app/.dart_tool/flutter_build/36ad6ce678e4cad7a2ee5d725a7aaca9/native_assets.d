@@ -1,0 +1,1 @@
+ C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\.dart_tool\\flutter_build\\36ad6ce678e4cad7a2ee5d725a7aaca9\\native_assets.yaml: 
