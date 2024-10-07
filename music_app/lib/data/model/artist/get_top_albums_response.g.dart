@@ -21,8 +21,9 @@ class AlbumModelAdapter extends TypeAdapter<AlbumModel> {
       name: fields[1] as String?,
       playcount: fields[2] as int?,
       url: fields[3] as String?,
+      isFavorite: fields[5] as bool?,
       albumImage: fields[4] as String?,
-    )..isFavorite = fields[5] as bool?;
+    );
   }
 
   @override
@@ -90,10 +91,11 @@ AlbumModel _$AlbumModelFromJson(Map<String, dynamic> json) => AlbumModel(
           .toList(),
       mbid: json['mbid'] as String?,
       name: json['name'] as String?,
-      playcount: json['playcount'] as int?,
+      playcount: (json['playcount'] as num?)?.toInt(),
       url: json['url'] as String?,
+      isFavorite: json['isFavorite'] as bool?,
       albumImage: json['albumImage'] as String?,
-    )..isFavorite = json['isFavorite'] as bool?;
+    );
 
 Map<String, dynamic> _$AlbumModelToJson(AlbumModel instance) =>
     <String, dynamic>{

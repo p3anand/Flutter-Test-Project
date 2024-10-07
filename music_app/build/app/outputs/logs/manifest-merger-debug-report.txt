@@ -5,17 +5,16 @@ INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\musi
 INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
 INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
 MERGED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from [:shared_preferences_android] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:integration_test] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\integration_test\intermediates\merged_manifest\debug\AndroidManifest.xml:7:1-12:12
-MERGED from [:shared_preferences] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\60fa4d2eef29530adb2f3737bb09a32c\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.test:rules:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b01d236638318408c0f6cef07e33ad32\transformed\rules-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.test.espresso:espresso-core:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\9f620459e3bc9d58babe941310dc9fbb\transformed\espresso-core-3.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.test:runner:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e13833c0976f2616f9053fcccb41eaf2\transformed\runner-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6321dc79945347e905b8ad0349050ee9\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\58c9efc7af9f19a662d867e9bb4fa8c1\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5758ad7f94b26528332ae2e21286e921\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -27,6 +26,7 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Preethi_Anand\.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\14fbddf6af4b6262a397d065d3c27a4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e18d8bd9f008b720890367964a22c2ec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e601848ac5b3a9b864a65f7c34a62b82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\ed820d5631f2a7ce3d8becb3bac1786e\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6a8d4b17334547b546b1aeb0b88b073c\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
@@ -103,16 +103,16 @@ uses-sdk
 INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\android\app\src\main\AndroidManifest.xml
+MERGED from [:shared_preferences_android] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:integration_test] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\integration_test\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-44
 MERGED from [:integration_test] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\integration_test\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-44
-MERGED from [:shared_preferences] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Preethi_Anand\Desktop\Repos\Integration-Test-Project\music_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\60fa4d2eef29530adb2f3737bb09a32c\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\60fa4d2eef29530adb2f3737bb09a32c\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\810cfb44d1ac86b7d1f66751e7c492e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
@@ -123,8 +123,6 @@ MERGED from [androidx.test.espresso:espresso-core:3.2.0] C:\Users\Preethi_Anand\
 MERGED from [androidx.test.espresso:espresso-core:3.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\9f620459e3bc9d58babe941310dc9fbb\transformed\espresso-core-3.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test:runner:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e13833c0976f2616f9053fcccb41eaf2\transformed\runner-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test:runner:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e13833c0976f2616f9053fcccb41eaf2\transformed\runner-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6321dc79945347e905b8ad0349050ee9\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\6321dc79945347e905b8ad0349050ee9\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\58c9efc7af9f19a662d867e9bb4fa8c1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
@@ -147,6 +145,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Preethi_
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e18d8bd9f008b720890367964a22c2ec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e601848ac5b3a9b864a65f7c34a62b82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\e601848ac5b3a9b864a65f7c34a62b82\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\5bc0298e2ff5a42d7d44434da0619320\transformed\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\ed820d5631f2a7ce3d8becb3bac1786e\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\ed820d5631f2a7ce3d8becb3bac1786e\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Preethi_Anand\.gradle\caches\transforms-3\b8b3ddb20eaa0d5c5f1dd00f4fbf64d5\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41

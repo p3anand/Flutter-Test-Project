@@ -87,7 +87,7 @@ Map<String, dynamic> _$TraksHolderToJson(TraksHolder instance) =>
     };
 
 TrackModel _$TrackModelFromJson(Map<String, dynamic> json) => TrackModel(
-      duration: json['duration'] as int?,
+      duration: (json['duration'] as num?)?.toInt(),
       name: json['name'] as String?,
       url: json['url'] as String?,
     );
