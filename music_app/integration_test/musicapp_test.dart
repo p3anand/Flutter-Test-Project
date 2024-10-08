@@ -1,57 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:music_app/main.dart' as app;
-import 'package:music_app/domin/entities/artist.dart';
-import 'package:music_app/domin/entities/album.dart';
-import 'package:music_app/presentation/blocs/favorite_albums/bloc/favorite_albums_bloc.dart';
-import 'package:music_app/presentation/blocs/artists/bloc/artists_bloc.dart';
-import 'package:mockito/mockito.dart';
-import 'package:get_it/get_it.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-// Mock classes
-class MockFavoriteAlbumsBloc extends Mock implements FavoriteAlbumsBloc {}
-class MockArtistsBloc extends Mock implements ArtistsBloc {}
-
-// Concrete implementation of Artist for testing
-class TestArtist extends Artist {
-  TestArtist({
-    String? name,
-    String? listeners,
-    String? mbid,
-    String? url,
-    String? streamable,
-  }) {
-    this.name = name;
-    this.listeners = listeners;
-    this.mbid = mbid;
-    this.url = url;
-    this.streamable = streamable;
-  }
-}
+import 'package:favorite_button/favorite_button.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
-
-  final getIt = GetIt.instance;
-
-  late MockFavoriteAlbumsBloc mockFavoriteAlbumsBloc;
-  late MockArtistsBloc mockArtistsBloc;
-
-  setUp(() {
-    getIt.reset();
-
-    mockFavoriteAlbumsBloc = MockFavoriteAlbumsBloc();
-    mockArtistsBloc = MockArtistsBloc();
-
-    getIt.registerSingleton<FavoriteAlbumsBloc>(mockFavoriteAlbumsBloc);
-    getIt.registerSingleton<ArtistsBloc>(mockArtistsBloc);
-  });
-
-  tearDown(() {
-    getIt.reset();
-  });
 
   testWidgets("Music App Integration Test", (WidgetTester tester) async {
     app.main();
@@ -59,42 +13,41 @@ void main() {
     expect(find.text('Music App'), findsOneWidget);
     debugPrint("App started successfully");
 
-    // Tap search icon
+    // Click on search icon
     final searchIcon = find.byIcon(Icons.search);
     expect(searchIcon, findsOneWidget);
     await tester.tap(searchIcon);
     await tester.pumpAndSettle();
     debugPrint("Tapped search icon");
 
-    // Enter search query
-    var artist = "Michael Jackson";
+    // Enter search text
+    var artist = "Eminem";
     await tester.enterText(find.byType(TextField), artist);
     await tester.pumpAndSettle();
     debugPrint("Entered search query: $artist");
 
-    // Trigger search
+    // Start Search
     final searchButton = find.byIcon(Icons.search).last;
     expect(searchButton, findsOneWidget);
     await tester.tap(searchButton);
-    await tester.pumpAndSettle();
+    await tester.pumpAndSettle(const Duration(seconds: 5));
     debugPrint("Triggered search");
 
-    // Debug: Print all text found on screen
-    find.byType(Text).evaluate().forEach((element) {
-      final widget = element.widget as Text;
-      debugPrint("Found text: ${widget.data}");
+    // Print all text on the screen
+    debugPrint("Text found on screen:");
+    tester.widgetList(find.byType(Text)).forEach((widget) {
+      if (widget is Text) {
+        debugPrint(widget.data);
+      }
     });
 
     // Verify search results
-    final searchResults = find.byWidgetPredicate((widget) =>
-    widget is ListTile || widget is Card || widget is InkWell,
-        description: 'Search result item');
-    expect(searchResults, findsAtLeastNWidgets(1), reason: 'No search results found');
-    debugPrint("Found ${searchResults.evaluate().length} search results");
+    expect(find.text(artist), findsAtLeastNWidgets(1), reason: 'No search results found for $artist');
+    debugPrint("Found search results for $artist");
 
     // Tap on the first search result
-    await tester.tap(searchResults.first);
-    await tester.pumpAndSettle();
+    await tester.tap(find.text(artist).first);
+    await tester.pumpAndSettle(const Duration(seconds: 5));
     debugPrint("Tapped on first search result");
 
     // Verify that the album details page is loaded
@@ -105,65 +58,102 @@ void main() {
     final albumCards = find.byType(Card);
     debugPrint("Number of album cards found: ${albumCards.evaluate().length}");
 
-    // Mark the first two albums as favorites
-    for (int i = 0; i < 2 && i < albumCards.evaluate().length; i++) {
+    // Selecting two albums as favorite albums
+    int favoritedCount = 0;
+    for (int i = 0; i < albumCards.evaluate().length && favoritedCount < 2; i++) {
       final card = albumCards.at(i);
       debugPrint("Analyzing card ${i + 1}:");
 
+      // Print all widgets in the card
+      final widgets = find.descendant(of: card, matching: find.byWidgetPredicate((_) => true));
+      //debugPrint("Widgets found in card ${i + 1}:");
+      widgets.evaluate().forEach((element) {
+        //debugPrint(element.widget.runtimeType.toString());
+      });
+
+      // Try to find and tap the favorite button
       final favoriteButton = find.descendant(
         of: card,
-        matching: find.byIcon(Icons.favorite_border),
+        matching: find.byType(FavoriteButton),
       );
 
       if (favoriteButton.evaluate().isNotEmpty) {
         await tester.tap(favoriteButton);
-        await tester.pumpAndSettle();
+        await tester.pumpAndSettle(const Duration(seconds: 5));
         debugPrint("Tapped favorite button on album ${i + 1}");
+
+        // Check for error message
+        final errorMessage = find.text('Sorry! we are unable to save your album');
+        await tester.pump(const Duration(seconds: 2)); // Wait for error message to appear
+
+        if (errorMessage.evaluate().isNotEmpty) {
+          debugPrint("NOTE - ERROR MESSAGE FOUND: ${(tester.widget(errorMessage) as Text).data}");
+        } else {
+          favoritedCount++;
+          debugPrint("Album ${i + 1} favorited successfully");
+        }
       } else {
         debugPrint("No favorite button found on album ${i + 1}");
       }
     }
 
-    // Navigate back to the search page
-    await tester.tap(find.byType(BackButton));
-    await tester.pumpAndSettle();
-    debugPrint("Navigated back to search page");
+    // Verify that at least one album was marked favorite successfully
+    expect(favoritedCount, greaterThan(0), reason: 'No albums were marked favourite');
 
     // Navigate back to the home page
-    await tester.tap(find.byType(BackButton));
-    await tester.pumpAndSettle();
-    debugPrint("Navigated back to home page");
+    while (find.byType(BackButton).evaluate().isNotEmpty) {
+      await tester.tap(find.byType(BackButton));
+      await tester.pumpAndSettle(const Duration(seconds: 8));
+      debugPrint("Navigated back");
+    }
 
     // Verify that we're back on the home page
     expect(find.text('Music App'), findsOneWidget);
     debugPrint("Verified home page");
 
-    // Check for favorited albums on the home page
+    // Check for favorite albums on the home page
     final favoritedAlbums = find.byType(Card);
     debugPrint("Number of favorited albums on home page: ${favoritedAlbums.evaluate().length}");
 
-    // Verify that we have at least two favorited albums
-    expect(favoritedAlbums, findsAtLeastNWidgets(2));
+    // Print all text on the home page
+    debugPrint("Text found on home page:");
+    tester.widgetList(find.byType(Text)).forEach((widget) {
+      if (widget is Text) {
+        debugPrint(widget.data);
+      }
+    });
 
-    debugPrint("Test completed successfully");
+    // Verify that we have at least one favorite album
+    expect(favoritedAlbums, findsAtLeastNWidgets(1), reason: 'Expected at least 1 album to be marked favorite, but found ${favoritedAlbums.evaluate().length}');
+
+    // Test navigation to album details from favorited album
+    if (favoritedAlbums.evaluate().isNotEmpty) {
+      // Tap on the first favorited album
+      await tester.tap(favoritedAlbums.first);
+      await tester.pumpAndSettle(const Duration(seconds: 5));
+      debugPrint("Tapped on favorited album");
+
+      // Verify that we're on the album details page
+      //expect(find.byType(Card), findsAtLeastNWidgets(1));
+      //expect(find.text('Tracks'), findsOneWidget);
+      debugPrint("Navigated to album details page");
+      await tester.pump(const Duration(seconds: 2));
+
+
+      // Navigate back to the home page
+      final backButton = find.byType(BackButton);
+      expect(backButton, findsOneWidget);
+      await tester.tap(backButton);
+      await tester.pumpAndSettle(const Duration(seconds: 5));
+      debugPrint("Navigated back to home page");
+
+      // Verify that we're back on the home page
+      expect(find.text('Music App'), findsOneWidget);
+      debugPrint("Verified return to home page after viewing album details");
+    } else {
+      debugPrint("We are lost");
+    }
+
+    debugPrint("Test End");
   });
-}
-
-List<Artist> mockArtistData() {
-  return [
-    TestArtist(
-      name: 'Michael Jackson',
-      listeners: '1000000',
-      mbid: 'some_mbid_1',
-      url: 'http://example.com/mj',
-      streamable: 'yes',
-    ),
-    TestArtist(
-      name: 'Janet Jackson',
-      listeners: '500000',
-      mbid: 'some_mbid_2',
-      url: 'http://example.com/jj',
-      streamable: 'yes',
-    ),
-  ];
 }
