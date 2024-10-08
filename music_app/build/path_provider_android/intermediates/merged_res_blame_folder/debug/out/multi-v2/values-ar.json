@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\build\\path_provider_android\\intermediates\\merged_res\\debug\\values-ar\\values-ar.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Preethi_Anand\\.gradle\\caches\\transforms-3\\f1c841d045ef482fe1d715e2c37bcd22\\transformed\\core-1.6.0\\res\\values-ar\\values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Preethi_Anand\\Desktop\\Repos\\Integration-Test-Project\\music_app\\build\\path_provider_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ar\\values-ar.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Preethi_Anand\\.gradle\\caches\\transforms-3\\f1c841d045ef482fe1d715e2c37bcd22\\transformed\\core-1.6.0\\res\\values-ar\\values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

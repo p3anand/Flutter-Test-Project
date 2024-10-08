@@ -110,7 +110,7 @@ class ArtistWidget extends StatelessWidget {
         color: Colors.black,
         child: Stack(
           children: [
-            Image.asset(Images.star),
+            //Image.asset(Images.star),
             Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
