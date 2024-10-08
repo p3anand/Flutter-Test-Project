@@ -18,13 +18,13 @@ void main() {
     expect(searchIcon, findsOneWidget);
     await tester.tap(searchIcon);
     await tester.pumpAndSettle();
-    debugPrint("Tapped search icon");
+    debugPrint("Clicked on search icon");
 
     // Enter search text
     var artist = "Eminem";
     await tester.enterText(find.byType(TextField), artist);
     await tester.pumpAndSettle();
-    debugPrint("Entered search query: $artist");
+    debugPrint("Entered search text: $artist");
 
     // Start Search
     final searchButton = find.byIcon(Icons.search).last;
@@ -48,7 +48,7 @@ void main() {
     // Tap on the first search result
     await tester.tap(find.text(artist).first);
     await tester.pumpAndSettle(const Duration(seconds: 5));
-    debugPrint("Tapped on first search result");
+    debugPrint("Clicked on first search result");
 
     // Verify that the album details page is loaded
     expect(find.byType(Card), findsAtLeastNWidgets(1));
@@ -64,13 +64,6 @@ void main() {
       final card = albumCards.at(i);
       debugPrint("Analyzing card ${i + 1}:");
 
-      // Print all widgets in the card
-      final widgets = find.descendant(of: card, matching: find.byWidgetPredicate((_) => true));
-      //debugPrint("Widgets found in card ${i + 1}:");
-      widgets.evaluate().forEach((element) {
-        //debugPrint(element.widget.runtimeType.toString());
-      });
-
       // Try to find and tap the favorite button
       final favoriteButton = find.descendant(
         of: card,
@@ -80,7 +73,7 @@ void main() {
       if (favoriteButton.evaluate().isNotEmpty) {
         await tester.tap(favoriteButton);
         await tester.pumpAndSettle(const Duration(seconds: 5));
-        debugPrint("Tapped favorite button on album ${i + 1}");
+        debugPrint("Clicked on favorite button on album ${i + 1}");
 
         // Check for error message
         final errorMessage = find.text('Sorry! we are unable to save your album');
@@ -90,7 +83,7 @@ void main() {
           debugPrint("NOTE - ERROR MESSAGE FOUND: ${(tester.widget(errorMessage) as Text).data}");
         } else {
           favoritedCount++;
-          debugPrint("Album ${i + 1} favorited successfully");
+          debugPrint("Album ${i + 1} marked favorite successfully");
         }
       } else {
         debugPrint("No favorite button found on album ${i + 1}");
@@ -113,7 +106,8 @@ void main() {
 
     // Check for favorite albums on the home page
     final favoritedAlbums = find.byType(Card);
-    debugPrint("Number of favorited albums on home page: ${favoritedAlbums.evaluate().length}");
+    int initialFavoritedCount = favoritedAlbums.evaluate().length;
+    debugPrint("Number of favorite albums on home page: $initialFavoritedCount");
 
     // Print all text on the home page
     debugPrint("Text found on home page:");
@@ -124,21 +118,18 @@ void main() {
     });
 
     // Verify that we have at least one favorite album
-    expect(favoritedAlbums, findsAtLeastNWidgets(1), reason: 'Expected at least 1 album to be marked favorite, but found ${favoritedAlbums.evaluate().length}');
+    expect(favoritedAlbums, findsAtLeastNWidgets(1), reason: 'Expected at least 1 album to be marked favorite, but found $initialFavoritedCount');
 
     // Test navigation to album details from favorited album
     if (favoritedAlbums.evaluate().isNotEmpty) {
       // Tap on the first favorited album
       await tester.tap(favoritedAlbums.first);
       await tester.pumpAndSettle(const Duration(seconds: 5));
-      debugPrint("Tapped on favorited album");
+      debugPrint("Clicked on favorited album");
 
       // Verify that we're on the album details page
-      //expect(find.byType(Card), findsAtLeastNWidgets(1));
       //expect(find.text('Tracks'), findsOneWidget);
       debugPrint("Navigated to album details page");
-      await tester.pump(const Duration(seconds: 2));
-
 
       // Navigate back to the home page
       final backButton = find.byType(BackButton);
@@ -151,9 +142,51 @@ void main() {
       expect(find.text('Music App'), findsOneWidget);
       debugPrint("Verified return to home page after viewing album details");
     } else {
-      debugPrint("We are lost");
+      debugPrint("No favorite albums found to test navigation");
+    }
+
+    // Removing album from favorites on home page
+    if (favoritedAlbums.evaluate().isNotEmpty) {
+      int initialFavoritedCount = favoritedAlbums.evaluate().length;
+      debugPrint("Initial number of favorite albums: $initialFavoritedCount");
+
+      // Finding the favorite button on the first favorite album
+      final firstFavoritedAlbum = favoritedAlbums.first;
+      final favoriteButton = find.descendant(
+        of: firstFavoritedAlbum,
+        matching: find.byType(FavoriteButton),
+      );
+
+      expect(favoriteButton, findsOneWidget, reason: 'Favorite button not found on the album');
+
+      // Tapping on the favorite button to remove from favorites
+      await tester.tap(favoriteButton);
+      await Future.delayed(const Duration(seconds: 3));
+
+      await tester.pumpAndSettle(const Duration(seconds: 5));
+      debugPrint("Tapped favorite button to remove album from favorites");
+      await Future.delayed(const Duration(seconds: 3));
+
+      // Checking if the number of favorite albums has decreased
+      final updatedFavoritedAlbums = find.byType(Card);
+      int updatedFavoritedCount = updatedFavoritedAlbums.evaluate().length;
+      debugPrint("Updated number of favorited albums: $updatedFavoritedCount");
+
+      expect(updatedFavoritedCount, lessThan(initialFavoritedCount),
+          reason: 'Expected number of favorited albums to decrease, but it did not change');
+      debugPrint("Successfully removed an album from favorites");
+
+      // Print all text on the home page after removal
+      debugPrint("Text found on home page after removal:");
+      tester.widgetList(find.byType(Text)).forEach((widget) {
+        if (widget is Text) {
+          debugPrint(widget.data);
+        }
+      });
+    } else {
+      debugPrint("No favorite albums to remove");
     }
 
     debugPrint("Test End");
-  });
+  });git 
 }
